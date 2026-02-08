@@ -1,0 +1,7 @@
+---
+- name: First Ansible playbook
+  hosts: web1
+  become: false
+  tasks:
+    - name: Ping my servers
+      ansible.builtin.ping:
